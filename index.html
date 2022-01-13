@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container-fluid" id="game">
+        <div class="title">Cricket</div>
+        <div class="content">
+          <form action="#">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">First Team</span>
+                <input type="text" id="First_team" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Second Team</span>
+                <input type="text" id="Second_team" placeholder="Team2" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Format</span>
+                <input type="text" id="Formet" placeholder="Format" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Overs</span>
+                <input type="text" id="Overs" placeholder="Overs" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Matches</span>
+                <input type="number" id="Series_matches" max=50 placeholder="Matches" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Series</span>
+                <input type="text" id="Series" placeholder="Series name" required>
+              </div>
+            </div>
+            <div class="button">
+              <button onclick="Form()">Lets Play</button>
+            </div>
+          </form>
+        </div>
+    </section>
+    <section class="container-fluid" id="main_div">
+        <div class="row">
+            <div class="col-md-3 pad">
+                <h1 id="First_team_name">Team1</h1>
+            </div>
+            <div class="col-md-6 pad">
+                <h1 id="Playing_series_name">Match</h1>
+            </div>
+            <div class="col-md-3 pad">
+                <h1 id="Second_team_name">Team2</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 pad">
+                <div class="col-md-12">
+                    <h2>OVER</h2>
+                </div>
+                <div class="col-md-12">
+                    <h3 id="overs">0</h3>
+                </div>
+            </div>
+            <div class="col-md-6 row pad" id="Screen">
+                <div class="col-md-12 Scn" id="Scree">
+                    <h1 id=Screen_output>hello</h1>
+                </div>
+            </div>
+            <div class="col-md-3 pad">
+                <div class="col-md-12">
+                    <h2>Target</h2>
+                </div>
+                <div class="col-md-12">
+                    <h3 id="target">-</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 pad">
+                <h2>Review</h2>
+                <h3 id="review">3</h3>
+            </div>
+            <div class="col-md-6 pad row">
+                <div class="col-md-3 score">
+                    <h2 id="Playing_team">IND</h2>
+                </div>
+                <div class="col-md-3 score">
+                    <h2 id="score">0</h2>
+                </div>
+                <div class="col-md-3 score">
+                    <h2>-</h2>
+                </div>
+                <div class="col-md-3 score wickets">
+                    <h2 id="wickets">0</h2>
+                </div>
+            </div>
+            <div class="col-md-3 rbutt pad">
+                <button id="rev" disabled="disabled" onclick="review()">Review</button>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-md-3 pad ball">
+                <h1 id="innings">P1</h1>
+            </div>
+            <div class="col-md-3 ball ball">
+                <button id="Bowling" onclick="balls()">Ball </button>
+            </div>
+            <div class="col-md-2 ball"> 
+                <h2 id="Chase_runs">-</h2> 
+            </div>  
+            <div class="col-md-2 ball">
+                <h2>need to </h2>
+            </div>
+            <div class="col-md-2 ball">
+                <h2 id="Chase_balls">-</h2>
+            </div>
+        </div>
+        <div class="col-12 headline">
+            <p>ind need 39 in 34 balls</p>
+        </div>
+    </section>
+    <script src="Javascript/bootstrap.min.js"></script>
+    <script src="ok.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+*{
+    color:white;
+    border: 2px solid black;
+}
+#main_div{
+    display: none;
+}
+body{
+    background-color: #0166c2!important;
+}
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+    border:none;
+}
+.Scn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.pad{
+    padding:19px;
+}
+.rbanner{
+    display:none;
+    transition: all 0.5s;
+}
+.ball{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+p{
+    font-size: 30px;
+}
+button{
+    width:80%;
+    color:white;
+    background-color: green;
+    outline: none;
+    border: none;
+    padding:10px; 
+    font-size: 30px;
+    border-radius: 10px;  
+}
+.rbutt{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.score  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
